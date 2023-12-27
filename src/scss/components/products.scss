@@ -1,0 +1,73 @@
+.products {
+  max-width: 705px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  #item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 935px;
+    @media (max-width: 887px) {
+      justify-content: center;
+    }
+    .item {
+      width: 195px;
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 450px) {
+        width: 182px !important;
+        margin: 15px !important;
+      }
+      .product-name {
+        margin-top: 10px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .price {
+        font-weight: 600;
+        font-size: 16px;
+        margin-block: 10px 3px;
+      }
+
+      .installment {
+        color: $gray-dark;
+      }
+      .purchaseBtn {
+        font-size: 14px;
+        background: $black-default;
+        border: none;
+        color: #ffffff;
+        width: 100%;
+        padding-block: 7px;
+        text-transform: uppercase;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  .verMais__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2px;
+    margin-left: -15px;
+    #verMaisBtn {
+      font-size: 18px;
+      background-color: blue;
+      color: #ffffff;
+      padding: 8px 20px;
+      border: none;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      margin-left: 32px;
+      @media (max-width: 450px) {
+        margin-left: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+input {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $gray-dark;
+  background-color: transparent;
+  display: block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input:before {
+  content: "";
+  background-color: #30cfd0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 8px;
+  height: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+label {
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}

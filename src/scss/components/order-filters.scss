@@ -1,0 +1,19 @@
+.orderFilters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding: 1vw 4vw;
+  @media(max-width: 450px) {
+    display: none;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 400;
+    
+  }
+  select {
+    padding: 10px;
+  }
+}
+
